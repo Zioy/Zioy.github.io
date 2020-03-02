@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head hexo-theme='https://volantis.js.org/#1.6.3'>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+  <meta charset="utf-8">
   <!-- SEO相关 -->
   
     
@@ -60,19 +60,7 @@
     function setLoadingBarProgress(num) {
       document.getElementById('loading-bar').style.width=num+"%";
     }
-  </script><!-- hexo-inject:begin -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-  </script><!-- hexo-inject:end -->
+  </script>
 
   
   
@@ -80,7 +68,7 @@
 
 <body>
   
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="cover-wrapper">
+  <div class="cover-wrapper">
     <cover class='cover  half'>
       
         
@@ -671,6 +659,6 @@
 
 
 
-  <script>setLoadingBarProgress(100);</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <script>setLoadingBarProgress(100);</script>
 </body>
 </html>
