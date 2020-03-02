@@ -1,5 +1,5 @@
 backend:
-  name: test-repo
+  name: git-gateway
   branch: master
 media_folder: source/images
 public_folder: /images
@@ -101,15 +101,15 @@ collections:
     name: pages
     delete: false
     files:
-      - name: about-index.md
-        label: About
-        file: source\about\index.md
-        editor:
-          preview: true
-        fields: *ref_0
       - name: 404.md
         label: 404 Not Found
         file: source\404.md
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: about-index.md
+        label: About
+        file: source\about\index.md
         editor:
           preview: true
         fields: *ref_0
